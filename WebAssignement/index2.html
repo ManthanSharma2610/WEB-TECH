@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<title>My Pictures Gallery</title>
+<style>
+
+
+
+html, body {
+  height: 100%;
+  font-family: arial;
+  background: #5D6D7E
+}
+
+* { color: #fff }
+
+a, p, button { font-size: 16px; }
+
+.grid>* { padding: 30px }
+
+.rg_item {
+  border: 1px solid #555;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 1px 1px 6px 0 black
+
+}
+
+.rg_item-img {
+  height: auto;
+  width: 100%;
+  height: 40px;
+  background: #9A7D0A
+}
+
+.rg_item-content { padding: 10px;
+  background: #9A7D0A
+}
+
+li { padding: 5px 0 }
+
+body>a, body>button {
+  display: initial;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  text-decoration: none;
+  background: none;
+  box-shadow: 1px 1px 6px 0 black;
+  position: relative;
+  color: #9A7D0A;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  cursor: pointer
+}
+
+body>a:after, body>button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+  width: 25%;
+  height: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+  display: block
+}
+
+body>a:hover, body>button:hover { color: #9A7D0A}
+
+body>a:hover:after, body>button:hover:after {
+  width: 100%;
+  height: 100%
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#808080;
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body class="container" >
+
+  <div class="container cbox">
+    <div style="text-align:center;box-radius=20px;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-center" style="background-color:; text-align:center;">
+        <a class="navbar-brand" href="index.html" style="align-self: center; background-color: #E74C3C;">Movies</a>
+        <a class="navbar-brand" href="index2.html" style="align-self: center; background-color:#E74C3C"> Favourite Personalities</a>
+      </nav>
+  
+    </div>
+  
+    <div class ="row">
+      <div class="col-md-8 adiv">
+        <div class="row">
+          <div class="container-fluid" style="text-align:center">
+            <button class="rg_btn" data-rg="grid-1" style="background-color:  #00FF00; border-radius: 10px;">Random-Gen!</button>
+            <div class="grid" id="grid-1">
+              <div>
+                <div class="rg_item">
+                  <div class="rg_item-img"></div>
+                  <div class="rg_item-content"><img src="images/image10.jpg" alt="" width="100%" height="100%"><br>STEPHEN CURRY</div>
+                </div>
+              </div>
+
+              <div>
+                <div class="rg_item">
+                  <div class="rg_item-img"></div>
+                  <div class="rg_item-content"><img src="images/image11.jpg" alt="" width="100%" height="100%"><br>LEBRON JAMES</div>
+                </div>
+              </div>
+              <div>
+                <div class="rg_item">
+                  <div class="rg_item-img"></div>
+                  <div class="rg_item-content"><img src="images/image12.jpg" alt="" width="100%" height="100%"><br>MICHAEL JORDON</div>
+                </div>
+              </div>
+              <div>
+                <div class="rg_item">
+                  <div class="rg_item-img"></div>
+                  <div class="rg_item-content"><img src="images/image13.jpg" alt="" width="100%" height="100%"><br>MS DHONI</div>
+                </div>
+              </div>
+              <div>
+                <div class="rg_item">
+                  <div class="rg_item-img"></div>
+                  <div class="rg_item-content"><img src="images/image14.jpg" alt="" width="100%" height="100%"><br>LIONEL MESSI</div>
+                </div>
+              </div>
+              <div>
+                <div class="rg_item">
+                  <div class="rg_item-img"></div>
+                  <div class="rg_item-content"><img src="images/image15.jpg" alt="" width="100%" height="100%"><br>CRISTIANO RONALDO</div>
+                </div>
+              </div>
+              <div>
+                <div class="rg_item">
+                  <div class="rg_item-img"></div>
+                  <div class="rg_item-content"><img src="images/image16.jpg" alt="" width="100%" height="100%"><br>RATAN TATA</div>
+                </div>
+              </div>
+              <div>
+                <div class="rg_item">
+                  <div class="rg_item-img"></div>
+                  <div class="rg_item-content"><img src="images/image17.jpg" alt="" width="100%" height="100%"><br>CHRISTIAN BALE</div>
+                </div>
+              </div>
+              <div>
+                <div class="rg_item">
+                  <div class="rg_item-img"></div>
+                  <div class="rg_item-content"><img src="images/image18.jpg" alt="" width="100%" height="100%"><br>JEFF BEZOS</div>
+                </div>
+              </div>
+              
+           
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+
+
+      
+      
+      <div class="col-md-4 bdiv">
+        <div class="row">
+          <div class="container-fluid" style="border:0px solid #0c0c0c; box-shadow:1px 1px 6px 0 black; border-radius: 13px; background:#000000; text-align:center;padding: 5%">
+            <div class="col-md-12 justify-content-start" ><h2>Utilities</h2>
+              <h3>BMI Calculator</h3>
+              <div class="container-fluid" style="border:0px solid orangered; box-shadow :#000; border-radius:  10px;padding: 10%; background-color: #C0C0C0">
+                <form class="form" id="form" onsubmit="return validateForm()">
+                  <div class="row-one">
+                    <input type="text" class="text-input" id="age" style="background-color: #800080; border-radius: 8px;" autocomplete="off" required/><p class="text">Age</p>
+                    <label class="container">
+                    <input type="radio" name="radio" id="f"><p class="text">Female</p>
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                    <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                  
+                  <div class="row-two">
+                    <input type="text" class="text-input" id="height" style="background-color: #800080; border-radius: 8px;" autocomplete="off" required><p class="text">Height (cm)</p>
+                    <input type="text" class="text-input" id="weight"  style="background-color: #800080; border-radius: 8px;"autocomplete="off" required><p class="text">Weight (kg)</p>
+                  </div>
+                  <button type="button" id="submit" onclick="countBmi()" style="background-color: #00FF00;border-radius:10px; box-shadow :#000;">Submit</button>
+                  </form>
+                  <p></p>
+                  <p id= "space"> Your BMI is <span id="output1"></span> </p>
+                  <p id= "space"> Your are <span id="output2"></span> </p>
+              </div>
+            </div>
+          <div class="col-md-12 justify-content-end">
+            <h3>Know your Zodiac Sign</h3>
+            
+            <div class="container-fluid" style="border:0px solid orangered;border-radius:10px; box-shadow :#000; background-color: #C0C0C0""> 
+              <div id = "box">
+                </div>
+                <h2> Enter your birthday. </h2>
+                <p>Month:  <input type="number" id="month" min="1" max="12" style="background-color: #800080; border-radius: 8px;"></p>
+                <p>Day No:<input type="number" id="day" min="1" max="31" style="background-color:#800080; border-radius: 8px;"></p>
+                <button type="button" id="animated" onclick="zodiac()" style="background-color: #00FF00;border-radius:10px; box-shadow :#000;">Submit</button>
+                <p id="photo"></p>
+                <p id= "space"> Your zodiac sign is <span id="output"></span> </p>
+                
+            </div>
+  
+          </div>  
+          </div>
+         </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding: 5%;">
+    <div class="footer" style="background-color: #C38D9E; text-align: center; box-shadow: 1px 1px 6px 0px #000; padding: 5px;">
+      <h2>Contact Me</h2>
+      <h3>Manthan Sharma</h3>
+      <h5>manthansharma2610@gmail.com</h5>
+      <h5>201800562</h5> <h5>49</h5>
+    </div>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+<script src="src/rdmgrid.min.js"></script> 
+<script>
+	// Initialize a grid
+	$('#grid-1').rdmGrid();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="myscripts.js"></script> 
+</body>
+</html>

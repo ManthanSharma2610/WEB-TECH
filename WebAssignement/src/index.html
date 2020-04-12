@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rdmGrid: Randomly Ordered Grid – a jQuery Plugin by Patrick Hollstein</title>
+</head>
+
+<body>
+<button class="rg_btn" data-rg="rg_grid">Click me!</button>
+
+<div class="rg_grids" id="rg_grid">
+	<div>Grid Element 1</div>
+	<div>Grid Element 2</div>
+	<div>Grid Element 3</div>
+	...
+</div>
+
+<script src="../dependencies/jquery.min.js"></script>
+<script src="rdmgrid.min.js"></script>
+
+<script>
+
+$('#rg_grid').rdmGrid();
+
+</script>
+</body>
+</html>
